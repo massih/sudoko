@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -21,6 +21,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androidapp.sudoku.SingleGamePageActivity"
+            android:label="@string/title_activity_single_game_page"
+            android:parentActivityName="com.androidapp.sudoku.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidapp.sudoku.MainActivity" />
         </activity>
     </application>
 

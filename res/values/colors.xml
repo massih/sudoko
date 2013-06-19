@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="opaque_red">#f00</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="massih_1">#AA0CC9</color>
+    <color name="massih_2">#B12CB8</color>
+    <color name="massih_3">#AA66CC</color>
+    <color name="viber_color">#532468</color>
+
+</resources>
