@@ -3,25 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/viber_color"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/viber_color"
     tools:context=".SingleGamePageActivity" >
 
-        <TextView
+    <TextView
+        android:id="@id/testTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" 
         android:layout_alignParentTop="true"
-        android:textColor="@color/spotify_color"/>
-    
+        android:text="@string/hello_world"
+        android:textColor="@color/spotify_color" />
 
-    <fragment android:name="com.androidapp.sudoku.KeypadFragment"
-            android:id="@+id/keypad_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:layout_alignParentBottom="true"/>
-    
+    <fragment
+        android:id="@+id/keypad_fragment"
+        android:name="com.androidapp.sudoku.KeypadFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

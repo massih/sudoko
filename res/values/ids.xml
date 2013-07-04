@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="testTextView" />
+    <item type="id" name="testButton" />
+    <item type="id" name="keypad_button_1" />
+    <item type="id" name="keypad_button_2" />
+    <item type="id" name="keypad_button_3" />
+    <item type="id" name="keypad_button_4" />
+    <item type="id" name="keypad_button_5" />
+    <item type="id" name="keypad_button_6" />
+    <item type="id" name="keypad_button_7" />
+    <item type="id" name="keypad_button_8" />
+    <item type="id" name="keypad_button_9" />
+</resources>

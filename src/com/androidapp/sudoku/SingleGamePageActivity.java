@@ -2,13 +2,19 @@ package com.androidapp.sudoku;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
 
 public class SingleGamePageActivity extends Activity {
+
+	private static final String TAG = "SingleGamePageActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +22,7 @@ public class SingleGamePageActivity extends Activity {
 		setContentView(R.layout.activity_single_game_page);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		setOnLongClickListener();
 	}
 
 	/**
@@ -50,6 +57,36 @@ public class SingleGamePageActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void keypadSetNote(View view) {
+		Button clickedButton = (Button) view;
+		TextView tv = (TextView) findViewById(R.id.testTextView);
+		String buttonText = clickedButton.getText().toString();
+		tv.append("\n Short clicked button --> " + buttonText);
+		Log.v(TAG, "button pressed --> " + buttonText);
+	}
+
+	private void setOnLongClickListener() {
+		View.OnLongClickListener listener = new View.OnLongClickListener() {
+			public boolean onLongClick(View v) {
+				Button clickedButton = (Button) v;
+				TextView tv = (TextView) findViewById(R.id.testTextView);
+				String buttonText = clickedButton.getText().toString();
+				tv.append("\n Long clicked button --> " + buttonText);
+				Log.v(TAG, "button long pressed --> " + buttonText);
+				return true;
+			}
+		};
+		int[] ids = { R.id.keypad_button_1, R.id.keypad_button_2,
+				R.id.keypad_button_3, R.id.keypad_button_4,
+				R.id.keypad_button_5, R.id.keypad_button_6,
+				R.id.keypad_button_7, R.id.keypad_button_8,
+				R.id.keypad_button_9 };
+
+		for (int i = 0; i < ids.length; i++) {
+			findViewById(ids[i]).setOnLongClickListener(listener);
+		}
 	}
 
 }

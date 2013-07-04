@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="opaque_red">#f00</color>
+    <color name="opaque_red">#ff1111</color>
     <color name="translucent_red">#80ff0000</color>
     <color name="massih_1">#AA0CC9</color>
     <color name="massih_2">#B12CB8</color>
     <color name="massih_3">#AA66CC</color>
+
+
+    <!-- Finalized colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black_1">#2D2D2D</color>
+    <color name="yellow_1">#F29803</color>
+    <color name="yellow_2">#DEE26A</color>
+    <color name="green_1">#119B07</color>
+    <color name="green_2">#39CCA4</color>
+    <color name="grey_1">#F5F5F5</color>
+    <color name="grey_2">#80A8A8A8</color>
+    <color name="blue_2">#4A8BF6</color>
+    <color name="blue_1_tr">#805582FC</color>
     <color name="viber_color">#532468</color>
-	<color name="spotify_color">#8CBA01</color>
+    <color name="spotify_color">#8CBA01</color>
 </resources>
