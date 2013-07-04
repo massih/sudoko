@@ -13,7 +13,7 @@ public class KeypadFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View activity = inflater.inflate(R.layout.keypad_fragment, container,
+		View activity = inflater.inflate(R.layout.keypad_fragment_2, container,
 				false);
 		// Inflate the layout for this fragment
 		return activity;

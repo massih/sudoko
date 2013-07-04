@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@id/keypad_button_1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/keypad_round_button"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num1"
+            android:textColor="#EFEFEF" />
+
+        <Button
+            android:id="@id/keypad_button_2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/keypad_round_button"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num2"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num3"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num4"
+            android:textColor="@color/black_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/keypad_button_5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num5"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num6"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_7"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num7"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num8"
+            android:textColor="@color/black_1" />
+
+        <Button
+            android:id="@id/keypad_button_9"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:background="@drawable/keypad_round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:longClickable="true"
+            android:onClick="keypadSetNote"
+            android:text="@string/num9"
+            android:textColor="@color/black_1" />
+    </LinearLayout>
+
+</LinearLayout>
